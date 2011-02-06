@@ -10,7 +10,6 @@ install_requires=[
   'suds',
 
 #deps, setup related
-  'collective.autopermission',
   'collective.googleloader',
   'collective.monkeypatcher',
   'plone.app.caching',
@@ -19,38 +18,35 @@ install_requires=[
   'Products.CMFPlacefulWorkflow',
   'Products.contentmigration',
   'Products.MemcachedManager',
-  'Products.TextIndexNG3',
   'z3c.unconfigure',
 
-#form
+#forms
   'Products.PloneFormGen',
   'collective.z3cform.norobots',
   'plone.formwidget.autocomplete',
   'plone.formwidget.captcha',
   'archetypes.referencebrowserwidget',
   'archetypes.uploadreferencewidget',
-  'Products.CompoundField',
 
 #email features
   'collective.contentrules.mail',
-  'Products.EasyNewsletter',
-  #'collective.dancing', #collective.singing, five.intid, cssutils, BeautifulSoup, zope.sendmail, zope.keyreference>=3.6.2, zope.app.keyreference==3.6.1',zope.app.catalog', zope.app.i18n', zc.queue', zc.lockfile', plone.z3cform>=0.5.1'
 
 #media (photo, audio, video, google maps)
   'collective.dewplayer',
+  'collective.carousel',
   'collective.gallery',
+#  'collective.googlemaps',
   'collective.picnik',
-  'p4a.videoembed',
-  'Products.Maps',
+  'nmd.plonelinkasvideoembed',
 
-
-#menu
+#some extra portlets
   'collective.portlet.actions',
   'qi.portlet.TagClouds',
 
 #social network, RSS,...
   'collective.portlet.feedmixer',
   'collective.sharerizer',
+  'collective.disqus',
 
 #others 
   'collective.portlet.contact',
@@ -68,16 +64,17 @@ setup(name='toutpt.bundle',
         "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='',
+      keywords='plone',
       author='JeanMichel FRANCOIS aka toutpt',
       author_email='toutpt@gmail.com',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://github.com/toutpt/toutpt.bundle',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['toutpt'],
       include_package_data=True,
       zip_safe=False,
       install_requires=install_requires,
+      extras_require = {'test': ['plone.app.testing']},
       entry_points="""
       # -*- Entry points: -*-
 

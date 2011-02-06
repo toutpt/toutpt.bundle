@@ -1,4 +1,27 @@
 <?xml version="1.0"?>
 <metadata>
   <version>1000</version>
+  <dependencies>
+      <!--deps setup related -->
+      <dependency>profile-plone.app.caching:default</dependency>
+      <dependency>profile-plone.app.theming:default</dependency>
+      <!--forms -->
+      <dependency>profile-Products.PloneFormGen:default</dependency>
+      <dependency>profile-collective.z3cform.norobots:default</dependency>
+      <!-- email -->
+      <dependency>profile-collective.contentrules.mail:default</dependency>
+      <!-- media -->
+      <dependency>profile-collective.carousel:default</dependency>
+      <dependency>profile-collective.dewplayer:default</dependency>
+      <dependency>profile-collective.gallery:default</dependency>
+      <dependency>profile-collective.picnik:default</dependency>
+      <dependency>profile-collective.picnik:default</dependency>
+      <dependency>profile-nmd.plonelinkasvideoembed:default</dependency>
+      <!-- some extra portlets -->
+      <dependency>profile-collective.portlet.actions:default</dependency>
+      <dependency>profile-qi.portlet.TagClouds:default</dependency>
+      <!-- social network, RSS, ... -->
+      <dependency>profile-collective.portlet.feedmixer:default</dependency>
+      <dependency>profile-collective.sharerizer:default</dependency>
+  </dependencies>
 </metadata>

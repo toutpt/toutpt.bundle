@@ -15,5 +15,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
-  
+  <!-- some addon still doesn't use auto include -->
+  <include package="collective.z3cform.norobots"/>
+  <include package="collective.dewplayer"/>
+  <include package="plone.app.portlets"/>
+  <include package="collective.portlet.feedmixer"/>
+  <include package="collective.sharerizer"/>
+
+
 </configure>
